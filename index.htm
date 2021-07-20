@@ -1,0 +1,81 @@
+<html>
+	<head>
+	<link rel="stylesheet" href="ss.css">
+	</head>
+	<body >
+	<div class="container">
+			<div class="topnav">
+				<a class="highlite" href="home.html">Home</a>
+				<a href="my-photos.html">My Photos</a>
+				<a href="contact.html">Contact</a>
+				<a href="about.html">About</a>
+				<a class="log" href="login.html">Logout</a>
+			</div>
+			<div>
+			<h1 align=center><i><u>My Favourites</u></i></h1>
+			<div class="sliding-images">
+			<img class="slides" align="center" src="https://wallpapercave.com/wp/wp2632110.jpg">
+			<img class="slides" align="center" src="https://wallpapercave.com/wp/wp1887998.jpg">
+			<img class="slides" align="center" src="https://www.planetware.com/wpimages/2020/01/india-in-pictures-beautiful-places-to-photograph-taj-mahal.jpg">
+			<img class="slides" align="center" src="https://assets.seniority.in/media/ktpl_blog/Temples_-_main_image.jpg">
+			<img class="slides" align="center" src="https://southamericatravelcentre.com.au/wp-content/uploads/2017/09/Iguazu-Falls-with-rainbow.jpg">
+			<img class="slides" align="center" src="https://cdn.sivanaspirit.com/wp-content/uploads/2017/01/04122650/un-18.jpg">
+			<button class="left-disp" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="right-disp" onclick="plusDivs(1)">&#10095;</button>
+			</div>
+			<script>
+				
+				var slideIndex = 0;
+				carousel();
+				function carousel() {
+				var i;
+				var x = document.getElementsByClassName("slides");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > x.length) {slideIndex = 1}
+				x[slideIndex-1].style.display = "block";
+				setTimeout(carousel, 2500); 
+				}
+
+
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+				showDivs(slideIndex += n);
+				}
+
+				function showDivs(n) {
+					var i;
+					var x = document.getElementsByClassName("slides");
+					if (n > x.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = x.length}
+					for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+					}
+					x[slideIndex-1].style.display = "block";  
+					}
+			</script>
+
+			<div class="wrapper">
+				<div class="slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcStK2Dez3eyVfOuZ0rYoYUxLjle62gcKckmiQ&usqp=CAU"></div>
+				<div class="slide"><img src="https://www.holidify.com/images/tooltipImages/HAMPI.jpg"></div>
+				<div class="slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS_gGWnjhJHxe3f1W_OHzoe4gq9Zmnf039kMw&usqp=CAU"></div>
+				<div class="slide"><img src="https://img.emg-services.net/HtmlPages/HtmlPage4239/switzerland-header-2.jpg"></div>
+				<div class="slide"><img src="https://d2c7ipcroan06u.cloudfront.net/wp-content/uploads/2018/12/shinchan-graphic-revised.jpg"></div>
+				<div class="slide"><img src="https://img-a.udemycdn.com/course/750x422/1325502_3ec6.jpg"></div>
+				<div class="slide"><img src="https://www.transindiatravels.com/wp-content/uploads/the-golden-temple-amritsar.jpg"></div>
+				<div class="slide"><img src="https://www.treebo.com/blog/wp-content/uploads/2017/06/Places-to-visit-in-Shimla_1.jpg"></div>
+				<div class="slide"><img src="https://www.untumble.com/blog/wp-content/uploads/2017/04/Krishna.jpg"></div>
+				<div class="slide"><img src="https://pmcvariety.files.wordpress.com/2019/08/phineas-ferb-cast.jpg?w=1024"></div>
+				<div class="slide"><img src="https://images.sadhguru.org/sites/default/files/media_files/39614-i-love-india-indian-culture_1.jpg"></div>
+				<div class="slide"><img src="https://i.ytimg.com/vi/TYjk2BggJjQ/maxresdefault.jpg"></div>
+				<div class="slide"><img src="https://images.thrillophilia.com/image/upload/s--ii9zTCYD--/c_fill,f_auto,fl_strip_profile,h_775,q_auto,w_1600/v1/images/photos/000/013/595/original/Mysore-Flickr.jpg.jpg?1458192645"></div>
+				<div class="slide"><img src="https://www.urby.in/blog/wp-content/uploads/2017/09/photographycoverimg.jpg"></div>
+				<div class="slide"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"></div>
+			</div>
+	</div>
+	</body>
+</html>
