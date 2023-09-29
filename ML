@@ -1,0 +1,9 @@
+Machine learning crash course
+These are a few of the notebooks from Google's online machine learning course. See the full course website for more.
+
+Intro to Pandas DataFrame
+Linear regression with tf.keras using synthetic data
+
+Using accelerated hardware
+TensorFlow with GPUs
+TensorFlow with TPUs
